@@ -18,9 +18,11 @@ type UserService struct {
 // User represents a Reddit user.
 type User struct {
 	// this is not the full ID, watch out.
-	ID      string     `json:"id,omitempty"`
-	Name    string     `json:"name,omitempty"`
-	Created *Timestamp `json:"created_utc,omitempty"`
+	ID         string     `json:"id,omitempty"`
+	Name       string     `json:"name,omitempty"`
+	Created    *Timestamp `json:"created_utc,omitempty"`
+	IconImage  string     `json:"icon_img,omitempty"`
+	SnooAvatar string     `json:"snoovatar_img,omitempty"`
 
 	PostKarma    int `json:"link_karma"`
 	CommentKarma int `json:"comment_karma"`
